@@ -1,0 +1,4 @@
+:schedule:
+  currency_worker:
+    cron: '0 12 * * 1-5'
+    class: CurrencyWorker
