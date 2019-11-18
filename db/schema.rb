@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_18_162955) do
+ActiveRecord::Schema.define(version: 2019_11_18_173108) do
 
   create_table "currencies", force: :cascade do |t|
-    t.integer "days_id"
+    t.integer "day_id"
     t.integer "currency_code"
     t.float "worth"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["days_id"], name: "index_currencies_on_days_id"
+    t.index ["day_id"], name: "index_currencies_on_day_id"
   end
 
   create_table "days", force: :cascade do |t|
