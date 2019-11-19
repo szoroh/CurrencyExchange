@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'httparty'
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
+gem 'semantic-ui-sass'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
