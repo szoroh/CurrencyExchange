@@ -1,0 +1,20 @@
+<h3>Historical data</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Currency code</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <% @all_currencies.each do |record| %>
+  <tbody>
+    <tr>
+      <td><%= record.day.date %></td>
+      <td><%= record.currency_code %></td>
+      <td><%= record.worth %></td>
+    </tr>
+  </tbody>
+  <% end %>
+</table>
